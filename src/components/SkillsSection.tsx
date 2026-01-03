@@ -2,33 +2,33 @@ import { useState } from "react";
 
 const skillCategories = [
   {
-    name: "Frontend",
+    name: "Programming",
     skills: [
-      { name: "React", level: 90 },
-      { name: "TypeScript", level: 85 },
-      { name: "Next.js", level: 80 },
-      { name: "Tailwind CSS", level: 95 },
-      { name: "Vue.js", level: 70 },
+      { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+      { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+      { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+      { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
     ],
   },
   {
-    name: "Backend",
+    name: "Tools & Platforms",
     skills: [
-      { name: "Node.js", level: 85 },
-      { name: "Python", level: 75 },
-      { name: "PostgreSQL", level: 80 },
-      { name: "MongoDB", level: 75 },
-      { name: "GraphQL", level: 70 },
+      { name: "Firebase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
+      { name: "Github", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+      { name: "Google Cloud", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" },
+      { name: "VSCode", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+      { name: "Google Colab", icon: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg" },
     ],
   },
   {
-    name: "Tools & Others",
+    name: "Design & Productivity",
     skills: [
-      { name: "Git", level: 90 },
-      { name: "Docker", level: 70 },
-      { name: "Figma", level: 85 },
-      { name: "AWS", level: 65 },
-      { name: "Linux", level: 75 },
+      { name: "Canva", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" },
+      { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+      { name: "Premiere Pro", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg" },
+      { name: "Word", icon: "https://upload.wikimedia.org/wikipedia/commons/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg" },
+      { name: "Excel", icon: "https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" },
     ],
   },
 ];
@@ -69,53 +69,54 @@ const SkillsSection = () => {
           ))}
         </div>
 
-        {/* Skills Grid */}
+        {/* Skills Grid with Icons */}
         <div className="max-w-4xl mx-auto">
-          <div className="grid gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
             {skillCategories[activeCategory].skills.map((skill, index) => (
               <div
                 key={skill.name}
-                className="group p-4 rounded-xl bg-card/30 border border-border hover:border-primary/30 transition-all duration-300"
+                className="group flex flex-col items-center gap-4 p-6 rounded-2xl bg-card/30 border border-border hover:border-primary/50 hover:bg-card/60 transition-all duration-300 cursor-pointer hover:-translate-y-2 hover:shadow-[0_10px_30px_hsl(185_100%_47%/0.2)]"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="flex items-center justify-between mb-3">
-                  <span className="font-medium text-foreground group-hover:text-primary transition-colors">
-                    {skill.name}
-                  </span>
-                  <span className="text-sm font-mono text-muted-foreground">
-                    {skill.level}%
-                  </span>
+                {/* Icon */}
+                <div className="w-16 h-16 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    className="w-14 h-14 object-contain filter drop-shadow-lg"
+                    loading="lazy"
+                  />
                 </div>
                 
-                {/* Progress Bar */}
-                <div className="h-2 rounded-full bg-muted/30 overflow-hidden">
-                  <div
-                    className="h-full rounded-full bg-gradient-to-r from-primary via-accent to-secondary transition-all duration-1000 ease-out relative"
-                    style={{ width: `${skill.level}%` }}
-                  >
-                    {/* Animated shine effect */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-[shimmer_2s_ease-in-out_infinite]" />
-                  </div>
-                </div>
+                {/* Name */}
+                <span className="font-medium text-foreground group-hover:text-primary transition-colors text-center">
+                  {skill.name}
+                </span>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Additional Tech Icons */}
-        <div className="mt-16 text-center">
-          <p className="text-muted-foreground mb-6">Also familiar with</p>
-          <div className="flex flex-wrap justify-center gap-4">
-            {["Redux", "Jest", "Webpack", "Sass", "Firebase", "Vercel", "Supabase", "Prisma"].map(
-              (tech) => (
-                <span
-                  key={tech}
-                  className="px-4 py-2 rounded-lg bg-card/50 border border-border text-sm font-mono text-muted-foreground hover:border-primary/50 hover:text-primary transition-all duration-300 cursor-pointer"
-                >
-                  {tech}
+        {/* All Skills Overview */}
+        <div className="mt-16">
+          <p className="text-center text-muted-foreground mb-8">All my skills at a glance</p>
+          <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+            {skillCategories.flatMap(cat => cat.skills).map((skill) => (
+              <div
+                key={skill.name}
+                className="flex items-center gap-2 px-4 py-2 rounded-full bg-card/50 border border-border hover:border-primary/50 hover:bg-card transition-all duration-300 cursor-pointer group"
+              >
+                <img
+                  src={skill.icon}
+                  alt={skill.name}
+                  className="w-5 h-5 object-contain"
+                  loading="lazy"
+                />
+                <span className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors">
+                  {skill.name}
                 </span>
-              )
-            )}
+              </div>
+            ))}
           </div>
         </div>
       </div>
