@@ -1,4 +1,5 @@
 import { User, MapPin, Briefcase, GraduationCap } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const infoItems = [
   { icon: User, label: "Name", value: "Fathin Cahyo Ramadhan" },
@@ -28,14 +29,11 @@ const AboutSection = () => {
           {/* Left - Profile Image Placeholder */}
           <div className="relative group">
             <div className="aspect-square max-w-md mx-auto rounded-2xl overflow-hidden gradient-border bg-card">
-              <div className="w-full h-full bg-gradient-to-br from-primary/20 via-accent/10 to-secondary/20 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-primary/20 flex items-center justify-center">
-                    <User size={64} className="text-primary" />
-                  </div>
-                  <p className="text-muted-foreground">Your Photo Here</p>
-                </div>
-              </div>
+              <img 
+                src={profilePhoto} 
+                alt="Fathin Cahyo Ramadhan" 
+                className="w-full h-full object-cover"
+              />
             </div>
             {/* Decorative elements */}
             <div className="absolute -bottom-4 -right-4 w-24 h-24 border-2 border-primary/30 rounded-2xl -z-10" />
