@@ -1,7 +1,7 @@
 import { User, MapPin, Briefcase, GraduationCap } from "lucide-react";
 
 const infoItems = [
-  { icon: User, label: "Name", value: "Your Full Name" },
+  { icon: User, label: "Name", value: "Fathin Cahyo Ramadhan" },
   { icon: MapPin, label: "Location", value: "Purwokerto, Indonesia" },
   { icon: Briefcase, label: "Interest", value: "Cloud, UI/UX, Data" },
   { icon: GraduationCap, label: "Education", value: "S1 Teknologi Informasi" },
