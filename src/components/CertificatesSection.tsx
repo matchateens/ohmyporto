@@ -3,11 +3,46 @@ import { Button } from "@/components/ui/button";
 
 const certificates = [
   {
-    title: "Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google Cloud",
-    issuer: "Dicoding Indonesia",
-    date: "Oktober 2023",
-    credentialId: "N9ZO59VEYPG5",
-    link: "https://www.dicoding.com/certificates/N9ZO59VEYPG5",
+    title: "AWS Certified Solutions Architect",
+    issuer: "Amazon Web Services",
+    date: "2024",
+    credentialId: "ABC123XYZ",
+    link: "#",
+  },
+  {
+    title: "Professional Frontend Developer",
+    issuer: "Meta",
+    date: "2023",
+    credentialId: "META-FE-456",
+    link: "#",
+  },
+  {
+    title: "Google Cloud Professional",
+    issuer: "Google",
+    date: "2023",
+    credentialId: "GCP-789",
+    link: "#",
+  },
+  {
+    title: "Full Stack Web Development",
+    issuer: "freeCodeCamp",
+    date: "2022",
+    credentialId: "FCC-FSWD",
+    link: "#",
+  },
+  {
+    title: "React Developer Certification",
+    issuer: "Coursera",
+    date: "2022",
+    credentialId: "REACT-123",
+    link: "#",
+  },
+  {
+    title: "UX Design Professional",
+    issuer: "Google",
+    date: "2021",
+    credentialId: "GUX-456",
+    link: "#",
   },
 ];
 
