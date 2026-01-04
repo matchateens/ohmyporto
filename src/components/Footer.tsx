@@ -1,11 +1,10 @@
-import { Github, Linkedin, Mail, Twitter, Heart } from "lucide-react";
+import { Github, Linkedin, Mail, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Mail, href: "#", label: "Email" },
+  { icon: Github, href: "https://github.com/matchateens", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/fatin-cahya/", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:fatincahya69@gmail.com", label: "Email" },
 ];
 
 const Footer = () => {
@@ -40,7 +39,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
-            {["Home", "About", "Projects", "Skills", "Certificates"].map((link) => (
+            {["Home", "About", "Projects", "Skills", "Certificates", "Contact"].map((link) => (
               <a
                 key={link}
                 href={`#${link.toLowerCase()}`}
