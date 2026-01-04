@@ -1,9 +1,10 @@
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail, Instagram, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/matchateens", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/fatin-cahya/", label: "LinkedIn" },
+  { icon: Instagram, href: "https://www.instagram.com/fatin.cahyo_", label: "Instagram" },
   { icon: Mail, href: "mailto:fatincahya69@gmail.com", label: "Email" },
 ];
 
