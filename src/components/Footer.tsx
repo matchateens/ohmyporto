@@ -54,7 +54,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center text-sm text-muted-foreground">
             <p className="flex items-center justify-center gap-1">
-              Made with <Heart size={14} className="text-primary fill-primary" /> by Your Name
+              Made with <Heart size={14} className="text-primary fill-primary" /> by Fathin Cahyo Ramadhan
             </p>
             <p className="mt-2">© {currentYear} All rights reserved.</p>
           </div>

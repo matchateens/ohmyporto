@@ -24,7 +24,7 @@ const HeroSection = () => {
           
           {/* Name */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <span className="gradient-text">Your Name</span>
+            <span className="gradient-text">Fathin Cahyo Ramadhan</span>
           </h1>
           
           {/* Title with typing effect */}
