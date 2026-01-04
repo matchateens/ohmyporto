@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Instagram } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -56,15 +56,26 @@ const HeroSection = () => {
           
           {/* Social Links */}
           <div className="flex gap-4 justify-center animate-fade-in" style={{ animationDelay: '1.2s' }}>
-            <Button variant="ghost" size="icon" className="hover:text-primary hover:scale-110 transition-all">
-              <Github size={24} />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary hover:scale-110 transition-all">
-              <Linkedin size={24} />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary hover:scale-110 transition-all">
-              <Mail size={24} />
-            </Button>
+            <a href="https://github.com/matchateens" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="hover:text-primary hover:scale-110 transition-all">
+                <Github size={24} />
+              </Button>
+            </a>
+            <a href="https://www.linkedin.com/in/fatin-cahya/" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="hover:text-primary hover:scale-110 transition-all">
+                <Linkedin size={24} />
+              </Button>
+            </a>
+            <a href="https://www.instagram.com/fatin.cahyo_" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="hover:text-primary hover:scale-110 transition-all">
+                <Instagram size={24} />
+              </Button>
+            </a>
+            <a href="mailto:fatincahya69@gmail.com">
+              <Button variant="ghost" size="icon" className="hover:text-primary hover:scale-110 transition-all">
+                <Mail size={24} />
+              </Button>
+            </a>
           </div>
         </div>
         
