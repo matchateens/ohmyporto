@@ -2,9 +2,9 @@ import { User, MapPin, Briefcase, GraduationCap } from "lucide-react";
 
 const infoItems = [
   { icon: User, label: "Name", value: "Your Full Name" },
-  { icon: MapPin, label: "Location", value: "Jakarta, Indonesia" },
-  { icon: Briefcase, label: "Experience", value: "3+ Years" },
-  { icon: GraduationCap, label: "Education", value: "Computer Science" },
+  { icon: MapPin, label: "Location", value: "Purwokerto, Indonesia" },
+  { icon: Briefcase, label: "Interest", value: "Cloud, UI/UX, Data" },
+  { icon: GraduationCap, label: "Education", value: "S1 Teknologi Informasi" },
 ];
 
 const AboutSection = () => {
@@ -46,16 +46,19 @@ const AboutSection = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">
-                Hi! I'm a passionate developer
+                Lulusan S1 Teknologi Informasi
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                I'm a creative developer with a passion for building beautiful and 
-                functional web applications. With expertise in modern technologies, 
-                I craft digital experiences that users love.
+                Lulusan S1 Teknologi Informasi Universitas AMIKOM Purwokerto dengan minat pada 
+                Cloud Computing, UI/UX Design, dan Programming. Berpengalaman dalam pengembangan 
+                API berbasis Node.js untuk aplikasi deteksi kesuburan telur, serta memiliki 
+                keahlian dalam desain grafis.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                When I'm not coding, you can find me exploring new technologies, 
-                contributing to open-source projects, or enjoying a good cup of coffee.
+                Memiliki kemampuan adaptasi yang baik, berpikir analitis, dan mengelola waktu 
+                secara efektif. Saat ini sedang memperdalam Data Science dengan Python untuk 
+                meningkatkan kompetensi dalam analisis data. Tertarik untuk berkarier di bidang 
+                Data Analyst, IT Support, Desain Grafis, dan Front-End Developer.
               </p>
             </div>
 
