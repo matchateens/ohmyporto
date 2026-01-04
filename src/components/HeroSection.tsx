@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail, Instagram } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const HeroSection = () => {
   return (
@@ -17,6 +18,15 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
+          {/* Profile Photo */}
+          <div className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary/30 shadow-lg shadow-primary/20 animate-fade-in">
+            <img 
+              src={profilePhoto} 
+              alt="Fathin Cahyo Ramadhan" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+
           {/* Greeting */}
           <p className="text-primary font-mono text-lg mb-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             👋 Hello, I'm
