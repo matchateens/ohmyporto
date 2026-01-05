@@ -17,6 +17,7 @@ import dicodingWebCert from "@/assets/certificates/dicoding-web.png";
 import courseraNetworkingCert from "@/assets/certificates/coursera-networking.png";
 import courseraSysadminCert from "@/assets/certificates/coursera-sysadmin.png";
 import redhatRh124Cert from "@/assets/certificates/redhat-rh124.png";
+import gnikDesignThinkingCert from "@/assets/certificates/gnik-design-thinking.png";
 
 const certificates = [
   {
@@ -98,6 +99,14 @@ const certificates = [
     credentialId: "0124-001846",
     link: "https://drive.google.com/file/d/1RjaN8CnosTvp2OHkcn9rnU_-Wz51ZIFw/view",
     image: redhatRh124Cert,
+  },
+  {
+    title: "Essential Skills: Design Thinking",
+    issuer: "GNIK & Kemnaker RI",
+    date: "Januari 2026",
+    credentialId: "Nilai 95",
+    link: "https://drive.google.com/file/d/1cT56WJgR8tDM_IaBhiqLKE3vor2SnDxD/view?usp=sharing",
+    image: gnikDesignThinkingCert,
   },
 ];
 
