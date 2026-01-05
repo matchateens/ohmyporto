@@ -1,5 +1,11 @@
-import { Award, ExternalLink, Calendar } from "lucide-react";
+import { Award, ExternalLink, Calendar, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogClose,
+} from "@/components/ui/dialog";
+import { useState } from "react";
 
 import dicodingBackendCert from "@/assets/certificates/dicoding-backend.png";
 import dicodingLogicCert from "@/assets/certificates/dicoding-logic.png";
@@ -24,6 +30,8 @@ const certificates = [
 ];
 
 const CertificatesSection = () => {
+  const [selectedCert, setSelectedCert] = useState<typeof certificates[0] | null>(null);
+
   return (
     <section id="certificates" className="py-20 md:py-32 relative">
       <div className="container mx-auto px-4">
@@ -46,7 +54,10 @@ const CertificatesSection = () => {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Certificate Image Preview */}
-              <div className="relative h-48 overflow-hidden">
+              <div 
+                className="relative h-48 overflow-hidden cursor-zoom-in"
+                onClick={() => setSelectedCert(cert)}
+              >
                 <img 
                   src={cert.image} 
                   alt={cert.title}
@@ -58,6 +69,13 @@ const CertificatesSection = () => {
                 {/* Award badge */}
                 <div className="absolute top-3 left-3 p-2 rounded-xl bg-primary/20 backdrop-blur-sm border border-primary/30">
                   <Award size={20} className="text-primary" />
+                </div>
+
+                {/* Zoom indicator */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-background/20 backdrop-blur-[2px]">
+                  <span className="text-foreground text-sm font-medium px-3 py-1.5 rounded-full bg-background/80 border border-border">
+                    Click to zoom
+                  </span>
                 </div>
               </div>
               
@@ -101,6 +119,44 @@ const CertificatesSection = () => {
           ))}
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      <Dialog open={!!selectedCert} onOpenChange={() => setSelectedCert(null)}>
+        <DialogContent className="max-w-4xl w-[95vw] p-0 bg-background/95 backdrop-blur-xl border-border overflow-hidden">
+          <DialogClose className="absolute right-3 top-3 z-50 p-2 rounded-full bg-background/80 border border-border hover:bg-primary/10 transition-colors">
+            <X size={20} />
+          </DialogClose>
+          
+          {selectedCert && (
+            <div className="flex flex-col">
+              {/* Full Image */}
+              <div className="w-full max-h-[70vh] overflow-auto">
+                <img 
+                  src={selectedCert.image} 
+                  alt={selectedCert.title}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              
+              {/* Info Footer */}
+              <div className="p-4 border-t border-border bg-card/50">
+                <h3 className="text-lg font-semibold text-foreground mb-1">
+                  {selectedCert.title}
+                </h3>
+                <p className="text-muted-foreground text-sm mb-3">
+                  {selectedCert.issuer} • {selectedCert.date}
+                </p>
+                <a href={selectedCert.link} target="_blank" rel="noopener noreferrer">
+                  <Button size="sm" className="gap-2">
+                    <span>View Original</span>
+                    <ExternalLink size={14} />
+                  </Button>
+                </a>
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
