@@ -13,6 +13,7 @@ import dicodingGitCert from "@/assets/certificates/dicoding-git.png";
 import dicodingJsCert from "@/assets/certificates/dicoding-javascript.png";
 import dicodingSoftwareCert from "@/assets/certificates/dicoding-software.png";
 import dicodingGcloudCert from "@/assets/certificates/dicoding-gcloud.png";
+import dicodingWebCert from "@/assets/certificates/dicoding-web.png";
 
 const certificates = [
   {
@@ -62,6 +63,14 @@ const certificates = [
     credentialId: "L4PQ8VGL4ZO1",
     link: "https://www.dicoding.com/certificates/L4PQ8VGL4ZO1",
     image: dicodingGcloudCert,
+  },
+  {
+    title: "Belajar Dasar Pemrograman Web",
+    issuer: "Dicoding Indonesia",
+    date: "September 2023",
+    credentialId: "1OP81LG52ZQK",
+    link: "https://www.dicoding.com/certificates/1OP81LG52ZQK",
+    image: dicodingWebCert,
   },
 ];
 
