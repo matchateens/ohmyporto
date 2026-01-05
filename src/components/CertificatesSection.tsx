@@ -66,14 +66,16 @@ const CertificatesSection = () => {
                 </div>
 
                 {/* View Button */}
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="w-full justify-center gap-2 border border-border hover:border-primary/50 hover:bg-primary/5"
-                >
-                  <span>View Credential</span>
-                  <ExternalLink size={14} />
-                </Button>
+                <a href={cert.link} target="_blank" rel="noopener noreferrer" className="block">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="w-full justify-center gap-2 border border-border hover:border-primary/50 hover:bg-primary/5"
+                  >
+                    <span>View Credential</span>
+                    <ExternalLink size={14} />
+                  </Button>
+                </a>
               </div>
 
               {/* Bottom accent line */}
