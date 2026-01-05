@@ -12,6 +12,7 @@ import dicodingLogicCert from "@/assets/certificates/dicoding-logic.png";
 import dicodingGitCert from "@/assets/certificates/dicoding-git.png";
 import dicodingJsCert from "@/assets/certificates/dicoding-javascript.png";
 import dicodingSoftwareCert from "@/assets/certificates/dicoding-software.png";
+import dicodingGcloudCert from "@/assets/certificates/dicoding-gcloud.png";
 
 const certificates = [
   {
@@ -53,6 +54,14 @@ const certificates = [
     credentialId: "53XEN5N00XRN",
     link: "https://www.dicoding.com/certificates/53XEN5N00XRN",
     image: dicodingSoftwareCert,
+  },
+  {
+    title: "Menjadi Google Cloud Engineer",
+    issuer: "Dicoding Indonesia",
+    date: "November 2023",
+    credentialId: "L4PQ8VGL4ZO1",
+    link: "https://www.dicoding.com/certificates/L4PQ8VGL4ZO1",
+    image: dicodingGcloudCert,
   },
 ];
 
