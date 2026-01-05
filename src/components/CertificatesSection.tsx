@@ -15,6 +15,7 @@ import dicodingSoftwareCert from "@/assets/certificates/dicoding-software.png";
 import dicodingGcloudCert from "@/assets/certificates/dicoding-gcloud.png";
 import dicodingWebCert from "@/assets/certificates/dicoding-web.png";
 import courseraNetworkingCert from "@/assets/certificates/coursera-networking.png";
+import courseraSysadminCert from "@/assets/certificates/coursera-sysadmin.png";
 
 const certificates = [
   {
@@ -80,6 +81,14 @@ const certificates = [
     credentialId: "7QGRX878KMAP",
     link: "https://drive.google.com/file/d/1iY9MKTp2K3ZZhfX0Klu5NDnR9PxXXsss/view",
     image: courseraNetworkingCert,
+  },
+  {
+    title: "System Administration and IT Infrastructure Services",
+    issuer: "Coursera (Google)",
+    date: "Oktober 2023",
+    credentialId: "YRBZVW58MR5J",
+    link: "https://drive.google.com/file/d/1fTuV5XGSC8cUUXnaSVy1H68tG0fq5ODD/view",
+    image: courseraSysadminCert,
   },
 ];
 
