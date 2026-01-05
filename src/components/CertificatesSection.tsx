@@ -16,6 +16,7 @@ import dicodingGcloudCert from "@/assets/certificates/dicoding-gcloud.png";
 import dicodingWebCert from "@/assets/certificates/dicoding-web.png";
 import courseraNetworkingCert from "@/assets/certificates/coursera-networking.png";
 import courseraSysadminCert from "@/assets/certificates/coursera-sysadmin.png";
+import redhatRh124Cert from "@/assets/certificates/redhat-rh124.png";
 
 const certificates = [
   {
@@ -89,6 +90,14 @@ const certificates = [
     credentialId: "YRBZVW58MR5J",
     link: "https://drive.google.com/file/d/1fTuV5XGSC8cUUXnaSVy1H68tG0fq5ODD/view",
     image: courseraSysadminCert,
+  },
+  {
+    title: "RH 124 : Red Hat Enterprise Linux System Administration I",
+    issuer: "Red Hat Academy",
+    date: "Maret 2024",
+    credentialId: "0124-001846",
+    link: "https://drive.google.com/file/d/1RjaN8CnosTvp2OHkcn9rnU_-Wz51ZIFw/view",
+    image: redhatRh124Cert,
   },
 ];
 
