@@ -9,6 +9,7 @@ import { useState } from "react";
 
 import dicodingBackendCert from "@/assets/certificates/dicoding-backend.png";
 import dicodingLogicCert from "@/assets/certificates/dicoding-logic.png";
+import dicodingGitCert from "@/assets/certificates/dicoding-git.png";
 
 const certificates = [
   {
@@ -26,6 +27,14 @@ const certificates = [
     credentialId: "6RPNWNNE5P2M",
     link: "https://www.dicoding.com/certificates/6RPNWNNE5P2M",
     image: dicodingLogicCert,
+  },
+  {
+    title: "Belajar Dasar Git dengan GitHub",
+    issuer: "Dicoding Indonesia",
+    date: "Agustus 2023",
+    credentialId: "0LZ090DGNZ65",
+    link: "https://www.dicoding.com/certificates/0LZ090DGNZ65",
+    image: dicodingGitCert,
   },
 ];
 
