@@ -11,6 +11,7 @@ import dicodingBackendCert from "@/assets/certificates/dicoding-backend.png";
 import dicodingLogicCert from "@/assets/certificates/dicoding-logic.png";
 import dicodingGitCert from "@/assets/certificates/dicoding-git.png";
 import dicodingJsCert from "@/assets/certificates/dicoding-javascript.png";
+import dicodingSoftwareCert from "@/assets/certificates/dicoding-software.png";
 
 const certificates = [
   {
@@ -44,6 +45,14 @@ const certificates = [
     credentialId: "JLX1W249JP72",
     link: "https://www.dicoding.com/certificates/JLX1W249JP72",
     image: dicodingJsCert,
+  },
+  {
+    title: "Memulai Dasar Pemrograman untuk Menjadi Pengembang Software",
+    issuer: "Dicoding Indonesia",
+    date: "Agustus 2023",
+    credentialId: "53XEN5N00XRN",
+    link: "https://www.dicoding.com/certificates/53XEN5N00XRN",
+    image: dicodingSoftwareCert,
   },
 ];
 
