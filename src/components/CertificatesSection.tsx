@@ -2,6 +2,7 @@ import { Award, ExternalLink, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 import dicodingBackendCert from "@/assets/certificates/dicoding-backend.png";
+import dicodingLogicCert from "@/assets/certificates/dicoding-logic.png";
 
 const certificates = [
   {
@@ -11,6 +12,14 @@ const certificates = [
     credentialId: "N9ZO59VEYPG5",
     link: "https://www.dicoding.com/certificates/N9ZO59VEYPG5",
     image: dicodingBackendCert,
+  },
+  {
+    title: "Pengenalan ke Logika Pemrograman (Programming Logic 101)",
+    issuer: "Dicoding Indonesia",
+    date: "Agustus 2023",
+    credentialId: "6RPNWNNE5P2M",
+    link: "https://www.dicoding.com/certificates/6RPNWNNE5P2M",
+    image: dicodingLogicCert,
   },
 ];
 
