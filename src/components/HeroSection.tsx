@@ -29,8 +29,8 @@ const HeroSection = () => {
           
           {/* Title with typing effect */}
           <div className="h-12 mb-8 overflow-hidden">
-            <p className="text-xl md:text-2xl text-muted-foreground font-mono animate-typing inline-block">
-              Full Stack Developer | UI/UX Designer
+          <p className="text-xl md:text-2xl text-muted-foreground font-mono animate-typing inline-block">
+              Data Engineer | Front - End Developer
             </p>
           </div>
           
