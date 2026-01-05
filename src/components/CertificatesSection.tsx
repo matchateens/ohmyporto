@@ -42,36 +42,44 @@ const CertificatesSection = () => {
           {certificates.map((cert, index) => (
             <div
               key={cert.title}
-              className="group relative p-6 rounded-2xl bg-card/50 border border-border hover:border-primary/50 transition-all duration-500 hover:-translate-y-2 cursor-pointer overflow-hidden"
+              className="group relative rounded-2xl bg-card/50 border border-border hover:border-primary/50 transition-all duration-500 hover:-translate-y-2 cursor-pointer overflow-hidden"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Decorative corner */}
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-primary/10 to-transparent rounded-bl-3xl" />
+              {/* Certificate Image Preview */}
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={cert.image} 
+                  alt={cert.title}
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                />
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
+                
+                {/* Award badge */}
+                <div className="absolute top-3 left-3 p-2 rounded-xl bg-primary/20 backdrop-blur-sm border border-primary/30">
+                  <Award size={20} className="text-primary" />
+                </div>
+              </div>
               
               {/* Content */}
-              <div className="relative z-10">
-                {/* Icon */}
-                <div className="mb-4 inline-flex p-3 rounded-xl bg-gradient-to-br from-primary/20 to-accent/10">
-                  <Award size={28} className="text-primary" />
-                </div>
-
+              <div className="relative z-10 p-5">
                 {/* Title */}
-                <h3 className="text-lg font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
+                <h3 className="text-base font-semibold mb-2 text-foreground group-hover:text-primary transition-colors line-clamp-2">
                   {cert.title}
                 </h3>
 
                 {/* Issuer */}
-                <p className="text-muted-foreground text-sm mb-4">
-                  Issued by {cert.issuer}
+                <p className="text-muted-foreground text-sm mb-3">
+                  {cert.issuer}
                 </p>
 
                 {/* Details */}
-                <div className="flex items-center gap-4 text-xs text-muted-foreground mb-4">
+                <div className="flex items-center gap-3 text-xs text-muted-foreground mb-4">
                   <span className="flex items-center gap-1">
-                    <Calendar size={14} />
+                    <Calendar size={12} />
                     {cert.date}
                   </span>
-                  <span className="font-mono">ID: {cert.credentialId}</span>
+                  <span className="font-mono text-[10px]">ID: {cert.credentialId}</span>
                 </div>
 
                 {/* View Button */}
