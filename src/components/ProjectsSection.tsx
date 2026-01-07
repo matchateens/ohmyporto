@@ -1,24 +1,27 @@
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Figma } from "lucide-react";
 
-// Placeholder projects - akan diupdate dengan gambar asli
-const projects: {
+// Project images
+import skyjobsPreview from "@/assets/projects/skyjobs-preview.png";
+
+interface Project {
   title: string;
   description: string;
   image?: string;
   tags: string[];
   github?: string;
+  figma?: string;
   demo?: string;
-}[] = [
-  // Tambahkan project Anda di sini dengan format:
-  // {
-  //   title: "Nama Project",
-  //   description: "Deskripsi singkat",
-  //   image: projectImage, // import dari assets
-  //   tags: ["React", "TypeScript"],
-  //   github: "https://github.com/...",
-  //   demo: "https://...",
-  // },
+}
+
+const projects: Project[] = [
+  {
+    title: "Sky Jobs",
+    description: "Aplikasi pencarian kerja dengan antarmuka modern yang memudahkan pengguna untuk menemukan, menyimpan, dan melamar pekerjaan. Dilengkapi fitur misi harian dan leaderboard untuk meningkatkan interaksi serta motivasi pengguna.",
+    image: skyjobsPreview,
+    tags: ["UI/UX Design", "Figma", "2022"],
+    figma: "https://www.figma.com/design/K0CIWgTN9lBozn7fgj3MVz/Untitled?node-id=0-1&p=f&t=lcyDtlv0vG2LJ7Zd-0",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -69,7 +72,7 @@ const ProjectsSection = () => {
                       {project.title}
                     </h3>
                     <div className="flex gap-1">
-                      {project.github && (
+                      {"github" in project && project.github && (
                         <Button
                           variant="ghost"
                           size="icon"
@@ -81,7 +84,19 @@ const ProjectsSection = () => {
                           </a>
                         </Button>
                       )}
-                      {project.demo && (
+                      {"figma" in project && project.figma && (
+                        <Button
+                          variant="ghost"
+                          size="icon"
+                          className="hover:text-primary hover:scale-110 transition-all h-8 w-8"
+                          asChild
+                        >
+                          <a href={project.figma} target="_blank" rel="noopener noreferrer">
+                            <Figma size={18} />
+                          </a>
+                        </Button>
+                      )}
+                      {"demo" in project && project.demo && (
                         <Button
                           variant="ghost"
                           size="icon"
