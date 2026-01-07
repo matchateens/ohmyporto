@@ -2,12 +2,14 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Figma } from "lucide-react";
 
 // Project images
-import skyjobsPreview from "@/assets/projects/skyjobs-preview.png";
+import skyjobsLoading from "@/assets/projects/skyjobs-loading.png";
+import skyjobsLogin from "@/assets/projects/skyjobs-preview.png";
+import skyjobsDetail from "@/assets/projects/skyjobs-detail.png";
 
 interface Project {
   title: string;
   description: string;
-  image?: string;
+  images?: string[];
   tags: string[];
   github?: string;
   figma?: string;
@@ -18,7 +20,7 @@ const projects: Project[] = [
   {
     title: "Sky Jobs",
     description: "Aplikasi pencarian kerja dengan antarmuka modern yang memudahkan pengguna untuk menemukan, menyimpan, dan melamar pekerjaan. Dilengkapi fitur misi harian dan leaderboard untuk meningkatkan interaksi serta motivasi pengguna.",
-    image: skyjobsPreview,
+    images: [skyjobsLoading, skyjobsLogin, skyjobsDetail],
     tags: ["UI/UX Design", "Figma", "2022"],
     figma: "https://www.figma.com/design/K0CIWgTN9lBozn7fgj3MVz/Untitled?node-id=0-1&p=f&t=lcyDtlv0vG2LJ7Zd-0",
   },
@@ -47,21 +49,31 @@ const ProjectsSection = () => {
                 className="group relative rounded-2xl bg-card/50 border border-border hover:border-primary/50 transition-all duration-500 hover:-translate-y-2 overflow-hidden"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                {/* Project Image Preview */}
-                <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20">
-                  {project.image ? (
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
+                {/* Project Image Preview - 3 images in one frame */}
+                <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 p-4">
+                  {project.images && project.images.length > 0 ? (
+                    <div className="flex gap-2 h-full items-center justify-center">
+                      {project.images.map((img, imgIndex) => (
+                        <div
+                          key={imgIndex}
+                          className="relative h-full flex-1 rounded-lg overflow-hidden shadow-lg border border-border/50 group-hover:scale-[1.02] transition-transform duration-500"
+                          style={{ animationDelay: `${imgIndex * 50}ms` }}
+                        >
+                          <img
+                            src={img}
+                            alt={`${project.title} screenshot ${imgIndex + 1}`}
+                            className="w-full h-full object-cover object-top"
+                          />
+                        </div>
+                      ))}
+                    </div>
                   ) : (
                     <div className="w-full h-full flex items-center justify-center">
                       <span className="text-muted-foreground/50 text-sm">No Preview</span>
                     </div>
                   )}
                   {/* Overlay on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
 
                 {/* Content */}
