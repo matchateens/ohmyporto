@@ -1,10 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Figma } from "lucide-react";
 
-// Project images
+// Project images - Sky Jobs
 import skyjobsLoading from "@/assets/projects/skyjobs-loading.png";
 import skyjobsLogin from "@/assets/projects/skyjobs-preview.png";
 import skyjobsDetail from "@/assets/projects/skyjobs-detail.png";
+
+// Project images - KitsuMax
+import kitsumaxLoading from "@/assets/projects/kitsumax-loading.png";
+import kitsumaxHome from "@/assets/projects/kitsumax-home.png";
+import kitsumaxPlayer from "@/assets/projects/kitsumax-player.png";
 
 interface Project {
   title: string;
@@ -23,6 +28,13 @@ const projects: Project[] = [
     images: [skyjobsLoading, skyjobsLogin, skyjobsDetail],
     tags: ["UI/UX Design", "Figma", "2022"],
     figma: "https://www.figma.com/design/K0CIWgTN9lBozn7fgj3MVz/Untitled?node-id=0-1&p=f&t=lcyDtlv0vG2LJ7Zd-0",
+  },
+  {
+    title: "KitsuMax",
+    description: "KITSUMAX adalah aplikasi streaming anime dengan desain modern dan navigasi mudah, menampilkan fitur login cepat, pilihan genre, profil pengguna, dan tampilan visual yang menarik untuk pengalaman menonton yang nyaman.",
+    images: [kitsumaxLoading, kitsumaxHome, kitsumaxPlayer],
+    tags: ["UI/UX Design", "Figma", "2023"],
+    figma: "https://www.figma.com/design/KHPbDMGh1pf1kcOZxDdmI7/Untitled?node-id=0-1&p=f&t=9ZR3D9VlC6LFM3zk-0",
   },
 ];
 
