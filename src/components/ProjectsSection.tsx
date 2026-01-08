@@ -34,6 +34,7 @@ interface Project {
 }
 
 const projects: Project[] = [
+  // 2024
   {
     title: "Web Klasifikasi Ulasan Skintific",
     description: "Aplikasi web hasil skripsi yang mengimplementasikan Analisis Sentimen menggunakan metode Support Vector Machine (SVM) untuk mengklasifikasikan ulasan produk Skintific. Sistem ini mampu memprediksi sentimen positif atau negatif dari teks ulasan pengguna secara otomatis, membantu dalam memahami persepsi konsumen terhadap produk skincare.",
@@ -49,12 +50,13 @@ const projects: Project[] = [
     github: "https://github.com/matchateens/game-recommender-system",
   },
   {
-    title: "Sky Jobs",
-    description: "Aplikasi pencarian kerja dengan antarmuka modern yang memudahkan pengguna untuk menemukan, menyimpan, dan melamar pekerjaan. Dilengkapi fitur misi harian dan leaderboard untuk meningkatkan interaksi serta motivasi pengguna.",
-    images: [skyjobsLoading, skyjobsLogin, skyjobsDetail],
-    tags: ["UI/UX Design", "Figma", "2022"],
-    figma: "https://www.figma.com/design/K0CIWgTN9lBozn7fgj3MVz/Untitled?node-id=0-1&p=f&t=lcyDtlv0vG2LJ7Zd-0",
+    title: "Fertile Egg Detector",
+    description: "FED (Fertile Egg Detector) adalah aplikasi hasil Capstone Project Bangkit Academy yang memanfaatkan Machine Learning untuk mendeteksi kesuburan telur secara otomatis. Dilengkapi fitur capture, library penyimpanan, dan antarmuka yang user-friendly.",
+    images: [fedWelcome, fedLogin, fedHome],
+    tags: ["UI/UX Design", "Bangkit Academy", "Figma", "2024"],
+    figma: "https://www.figma.com/design/JK9SCeVjD3PAPdIQfurpCx/Capstone-Project-Bangkit?node-id=0-1&p=f&t=kL9HHB3Uve4wjBl5-0",
   },
+  // 2023
   {
     title: "KitsuMax",
     description: "KITSUMAX adalah aplikasi streaming anime dengan desain modern dan navigasi mudah, menampilkan fitur login cepat, pilihan genre, profil pengguna, dan tampilan visual yang menarik untuk pengalaman menonton yang nyaman.",
@@ -62,12 +64,13 @@ const projects: Project[] = [
     tags: ["UI/UX Design", "Figma", "2023"],
     figma: "https://www.figma.com/design/KHPbDMGh1pf1kcOZxDdmI7/Untitled?node-id=0-1&p=f&t=9ZR3D9VlC6LFM3zk-0",
   },
+  // 2022
   {
-    title: "Fertile Egg Detector",
-    description: "FED (Fertile Egg Detector) adalah aplikasi hasil Capstone Project Bangkit Academy yang memanfaatkan Machine Learning untuk mendeteksi kesuburan telur secara otomatis. Dilengkapi fitur capture, library penyimpanan, dan antarmuka yang user-friendly.",
-    images: [fedWelcome, fedLogin, fedHome],
-    tags: ["UI/UX Design", "Bangkit Academy", "Figma", "2024"],
-    figma: "https://www.figma.com/design/JK9SCeVjD3PAPdIQfurpCx/Capstone-Project-Bangkit?node-id=0-1&p=f&t=kL9HHB3Uve4wjBl5-0",
+    title: "Sky Jobs",
+    description: "Aplikasi pencarian kerja dengan antarmuka modern yang memudahkan pengguna untuk menemukan, menyimpan, dan melamar pekerjaan. Dilengkapi fitur misi harian dan leaderboard untuk meningkatkan interaksi serta motivasi pengguna.",
+    images: [skyjobsLoading, skyjobsLogin, skyjobsDetail],
+    tags: ["UI/UX Design", "Figma", "2022"],
+    figma: "https://www.figma.com/design/K0CIWgTN9lBozn7fgj3MVz/Untitled?node-id=0-1&p=f&t=lcyDtlv0vG2LJ7Zd-0",
   },
 ];
 
