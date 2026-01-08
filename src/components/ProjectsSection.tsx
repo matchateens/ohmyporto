@@ -17,6 +17,9 @@ import fedWelcome from "@/assets/projects/fed-welcome.png";
 import fedLogin from "@/assets/projects/fed-login.png";
 import fedHome from "@/assets/projects/fed-home.png";
 
+// Project images - Skintific Klasifikasi
+import skintificKlasifikasi from "@/assets/projects/skintific-klasifikasi.jpg";
+
 interface Project {
   title: string;
   description: string;
@@ -28,6 +31,13 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    title: "Web Klasifikasi Ulasan Skintific",
+    description: "Aplikasi web hasil skripsi yang mengimplementasikan Analisis Sentimen menggunakan metode Support Vector Machine (SVM) untuk mengklasifikasikan ulasan produk Skintific. Sistem ini mampu memprediksi sentimen positif atau negatif dari teks ulasan pengguna secara otomatis, membantu dalam memahami persepsi konsumen terhadap produk skincare.",
+    images: [skintificKlasifikasi],
+    tags: ["Machine Learning", "Python", "SVM", "Skripsi", "2024"],
+    github: "https://github.com/matchateens/Klasifikasi-Ulasan-Skintific",
+  },
   {
     title: "Sky Jobs",
     description: "Aplikasi pencarian kerja dengan antarmuka modern yang memudahkan pengguna untuk menemukan, menyimpan, dan melamar pekerjaan. Dilengkapi fitur misi harian dan leaderboard untuk meningkatkan interaksi serta motivasi pengguna.",
