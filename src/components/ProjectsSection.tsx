@@ -52,7 +52,7 @@ const projects: Project[] = [
 ];
 
 const ProjectsSection = () => {
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [expandedDescription, setExpandedDescription] = useState<string | null>(null);
 
   return (
     <section id="projects" className="py-20 md:py-32 relative">
@@ -152,15 +152,19 @@ const ProjectsSection = () => {
 
                   {/* Description with Read More */}
                   <div className="mb-4">
-                    <p className="text-muted-foreground text-sm line-clamp-2">
+                    <p className={`text-muted-foreground text-sm transition-all duration-300 ${
+                      expandedDescription === project.title ? '' : 'line-clamp-2'
+                    }`}>
                       {project.description}
                     </p>
                     {project.description.length > 100 && (
                       <button
-                        onClick={() => setSelectedProject(project)}
+                        onClick={() => setExpandedDescription(
+                          expandedDescription === project.title ? null : project.title
+                        )}
                         className="text-primary text-sm font-medium mt-1 hover:underline transition-all"
                       >
-                        Baca selengkapnya...
+                        {expandedDescription === project.title ? 'Tutup' : 'Baca selengkapnya...'}
                       </button>
                     )}
                   </div>
@@ -190,105 +194,6 @@ const ProjectsSection = () => {
         )}
       </div>
 
-      {/* Modal for full description */}
-      {selectedProject && (
-        <div 
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 animate-fade-in"
-          onClick={() => setSelectedProject(null)}
-        >
-          {/* Backdrop */}
-          <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
-          
-          {/* Modal Content */}
-          <div 
-            className="relative bg-card border border-border rounded-2xl max-w-2xl w-full max-h-[80vh] overflow-hidden shadow-2xl animate-scale-in"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {/* Header with images */}
-            <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10 p-4">
-              {selectedProject.images && selectedProject.images.length > 0 && (
-                <div className="flex gap-3 h-full items-center justify-center">
-                  {selectedProject.images.map((img, imgIndex) => (
-                    <div
-                      key={imgIndex}
-                      className="relative h-full flex-1 rounded-lg overflow-hidden shadow-lg border border-border/50"
-                    >
-                      <img
-                        src={img}
-                        alt={`${selectedProject.title} screenshot ${imgIndex + 1}`}
-                        className="w-full h-full object-cover object-top"
-                      />
-                    </div>
-                  ))}
-                </div>
-              )}
-              
-              {/* Close button */}
-              <Button
-                variant="ghost"
-                size="icon"
-                className="absolute top-2 right-2 bg-background/50 backdrop-blur-sm hover:bg-background/80 rounded-full"
-                onClick={() => setSelectedProject(null)}
-              >
-                <X size={20} />
-              </Button>
-            </div>
-
-            {/* Content */}
-            <div className="p-6 overflow-y-auto max-h-[40vh]">
-              {/* Title and links */}
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-2xl font-bold text-foreground">
-                  {selectedProject.title}
-                </h3>
-                <div className="flex gap-2">
-                  {selectedProject.github && (
-                    <Button variant="outline" size="sm" asChild>
-                      <a href={selectedProject.github} target="_blank" rel="noopener noreferrer">
-                        <Github size={16} className="mr-2" />
-                        GitHub
-                      </a>
-                    </Button>
-                  )}
-                  {selectedProject.figma && (
-                    <Button variant="outline" size="sm" asChild>
-                      <a href={selectedProject.figma} target="_blank" rel="noopener noreferrer">
-                        <Figma size={16} className="mr-2" />
-                        Figma
-                      </a>
-                    </Button>
-                  )}
-                  {selectedProject.demo && (
-                    <Button variant="outline" size="sm" asChild>
-                      <a href={selectedProject.demo} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink size={16} className="mr-2" />
-                        Demo
-                      </a>
-                    </Button>
-                  )}
-                </div>
-              </div>
-
-              {/* Full description */}
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                {selectedProject.description}
-              </p>
-
-              {/* Tags */}
-              <div className="flex flex-wrap gap-2">
-                {selectedProject.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-3 py-1 text-xs font-mono rounded-full bg-primary/10 text-primary border border-primary/20"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 };
