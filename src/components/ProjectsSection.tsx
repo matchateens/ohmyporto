@@ -20,6 +20,9 @@ import fedHome from "@/assets/projects/fed-home.png";
 // Project images - Skintific Klasifikasi
 import skintificKlasifikasi from "@/assets/projects/skintific-klasifikasi.jpg";
 
+// Project images - Game Recommender
+import gameRecommender from "@/assets/projects/game-recommender.png";
+
 interface Project {
   title: string;
   description: string;
@@ -37,6 +40,13 @@ const projects: Project[] = [
     images: [skintificKlasifikasi],
     tags: ["Machine Learning", "Python", "SVM", "Skripsi", "2024"],
     github: "https://github.com/matchateens/Klasifikasi-Ulasan-Skintific",
+  },
+  {
+    title: "Game Recommender System",
+    description: "Sistem rekomendasi game berbasis web yang membantu pengguna menemukan game sesuai preferensi. Dilengkapi fitur pencarian berdasarkan genre, platform, rating ESRB, dan menampilkan game populer dengan informasi rating. Menggunakan algoritma rekomendasi untuk memberikan saran game yang relevan.",
+    images: [gameRecommender],
+    tags: ["Machine Learning", "Python", "Recommender System", "2024"],
+    github: "https://github.com/matchateens/game-recommender-system",
   },
   {
     title: "Sky Jobs",
