@@ -11,6 +11,11 @@ import kitsumaxLoading from "@/assets/projects/kitsumax-loading.png";
 import kitsumaxHome from "@/assets/projects/kitsumax-home.png";
 import kitsumaxPlayer from "@/assets/projects/kitsumax-player.png";
 
+// Project images - Fertile Egg Detector
+import fedWelcome from "@/assets/projects/fed-welcome.png";
+import fedLogin from "@/assets/projects/fed-login.png";
+import fedHome from "@/assets/projects/fed-home.png";
+
 interface Project {
   title: string;
   description: string;
@@ -35,6 +40,13 @@ const projects: Project[] = [
     images: [kitsumaxLoading, kitsumaxHome, kitsumaxPlayer],
     tags: ["UI/UX Design", "Figma", "2023"],
     figma: "https://www.figma.com/design/KHPbDMGh1pf1kcOZxDdmI7/Untitled?node-id=0-1&p=f&t=9ZR3D9VlC6LFM3zk-0",
+  },
+  {
+    title: "Fertile Egg Detector",
+    description: "FED (Fertile Egg Detector) adalah aplikasi hasil Capstone Project Bangkit Academy yang memanfaatkan Machine Learning untuk mendeteksi kesuburan telur secara otomatis. Dilengkapi fitur capture, library penyimpanan, dan antarmuka yang user-friendly.",
+    images: [fedWelcome, fedLogin, fedHome],
+    tags: ["UI/UX Design", "Bangkit Academy", "Figma", "2024"],
+    figma: "https://www.figma.com/design/JK9SCeVjD3PAPdIQfurpCx/Capstone-Project-Bangkit?node-id=0-1&p=f&t=kL9HHB3Uve4wjBl5-0",
   },
 ];
 
