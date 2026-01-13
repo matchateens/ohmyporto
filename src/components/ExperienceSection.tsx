@@ -2,6 +2,17 @@ import { Briefcase } from "lucide-react";
 
 const experienceData = [
   {
+    company: "Kuliah Kerja Lapangan Desa Brani, Cilacap",
+    position: "Koordinator IT",
+    period: "Aug 2025 - Sep 2025",
+    responsibilities: [
+      "Memimpin dan mengoordinasikan tim IT dalam pelaksanaan kegiatan teknologi informasi selama KKL.",
+      "Melakukan perbaikan dan pembaruan website desa untuk meningkatkan tampilan serta fungsionalitas sistem informasi publik.",
+      "Menulis dan mempublikasikan artikel kegiatan desa melalui website resmi.",
+      "Menangani troubleshooting perangkat komputer dan jaringan di kantor Balai Desa untuk memastikan kelancaran operasional.",
+    ],
+  },
+  {
     company: "Yayasan Dicoding Indonesia (Bangkit Academy)",
     position: "Studi Independen – Cloud Computing",
     period: "Aug 2023 - Jan 2024",
