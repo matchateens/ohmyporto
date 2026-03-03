@@ -4,7 +4,7 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 const infoItems = [
   { icon: User, label: "Name", value: "Fathin Cahyo Ramadhan" },
   { icon: MapPin, label: "Location", value: "Duren Tiga, Pancoran, Indonesia" },
-  { icon: Briefcase, label: "Interest", value: "Front-End Developer, UI/UX, Data Analyst, IT Support, Cloud Computing" },
+  { icon: Briefcase, label: "Interest", value: "Data Science, Backend Development, Cloud Computing" },
   { icon: GraduationCap, label: "Education", value: "S1 Teknologi Informasi" },
 ];
 
@@ -44,19 +44,21 @@ const AboutSection = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-semibold mb-4 text-foreground">
-                Lulusan S1 Teknologi Informasi
+                Fresh Graduate S1 Teknologi Informasi
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Lulusan S1 Teknologi Informasi Universitas AMIKOM Purwokerto dengan minat pada 
-                Cloud Computing, UI/UX Design, dan Programming. Berpengalaman dalam pengembangan 
-                API berbasis Node.js untuk aplikasi deteksi kesuburan telur, serta memiliki 
-                keahlian dalam desain grafis.
+                Fresh Graduate S1 Teknologi Informasi dari Universitas AMIKOM Purwokerto dengan 
+                minat pada Data Science dan Backend Development. Memiliki pengalaman dalam 
+                pengembangan API menggunakan Node.js untuk aplikasi deteksi kesuburan telur, 
+                serta pemrosesan dan analisis data menggunakan Python. Terbiasa bekerja dengan 
+                konsep RESTful API, pengolahan data, serta dasar machine learning.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Memiliki kemampuan adaptasi yang baik, berpikir analitis, dan mengelola waktu 
-                secara efektif. Saat ini sedang memperdalam Data Science dengan Python untuk 
-                meningkatkan kompetensi dalam analisis data. Tertarik untuk berkarier di bidang 
-                Data Analyst, IT Support, Desain Grafis, dan Front-End Developer.
+                Memiliki kemampuan berpikir analitis, problem solving, dan manajemen waktu yang 
+                baik, serta mampu beradaptasi dengan cepat di lingkungan kerja yang dinamis. 
+                Saat ini tengah memperdalam kompetensi di bidang Data Science, termasuk eksplorasi 
+                data, machine learning, dan pengembangan solusi berbasis data untuk mendukung 
+                pengambilan keputusan yang efektif.
               </p>
             </div>
 
