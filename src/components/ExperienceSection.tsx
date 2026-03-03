@@ -13,6 +13,17 @@ const experienceData = [
     ],
   },
   {
+    company: "Koperasi Rahmi S*Mart",
+    position: "Cashier – Kontrak",
+    period: "Sep 2025 - Nov 2025",
+    responsibilities: [
+      "Mengelola transaksi penjualan harian menggunakan sistem kasir.",
+      "Melakukan pencatatan keuangan, pengecekan stok barang, dan penyetoran akhir hari.",
+      "Memberikan pelayanan ramah dan solutif kepada pelanggan.",
+      "Menjaga ketelitian dalam penghitungan uang dan pengelolaan transaksi.",
+    ],
+  },
+  {
     company: "Kuliah Kerja Lapangan Desa Brani, Cilacap",
     position: "Koordinator IT",
     period: "Aug 2025 - Sep 2025",
@@ -33,6 +44,17 @@ const experienceData = [
       "Mengembangkan aplikasi web berbasis cloud menggunakan Docker, Kubernetes, dan CI/CD pipeline.",
       "Merancang dan membangun API untuk aplikasi Fertile Egg Detector sebagai bagian dari proyek akhir.",
       "Berkolaborasi dalam proyek capstone lintas bidang bersama tim Mobile Development dan Machine Learning untuk menciptakan solusi berbasis teknologi cloud.",
+    ],
+  },
+  {
+    company: "Kelompok Penyelenggara Pemungutan Suara (KPPS)",
+    position: "Anggota KPPS – Komisi Pemilihan Umum Republik Indonesia (KPU RI)",
+    period: "Feb 2024 - Mar 2024",
+    responsibilities: [
+      "Bertugas dalam pelaksanaan pemungutan dan penghitungan suara di TPS.",
+      "Memastikan proses pemilu berjalan tertib, transparan, dan sesuai regulasi.",
+      "Melayani pemilih serta mengelola administrasi dokumen pemilu.",
+      "Bekerja secara koordinatif dengan anggota KPPS lain untuk menjaga integritas proses pemilihan.",
     ],
   },
 ];
