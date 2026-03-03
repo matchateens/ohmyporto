@@ -36,8 +36,8 @@ const HeroSection = () => {
           
           {/* Description */}
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: '0.8s' }}>
-            Passionate about creating beautiful and functional web experiences. 
-            I transform ideas into elegant, user-friendly applications.
+            Fresh Graduate S1 Teknologi Informasi dengan minat pada Data Science dan Backend Development. 
+            Terbiasa bekerja dengan RESTful API, pengolahan data, serta dasar machine learning.
           </p>
           
           {/* CTA Buttons */}
