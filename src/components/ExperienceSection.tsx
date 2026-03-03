@@ -2,6 +2,17 @@ import { Briefcase } from "lucide-react";
 
 const experienceData = [
   {
+    company: 'PT Satria Antaran Prima Tbk. ("SAP Express")',
+    position: "Information Technology – Magang",
+    period: "Nov 2025 - Saat ini",
+    responsibilities: [
+      "Melakukan instalasi ulang sistem operasi, konfigurasi perangkat, dan deployment software untuk mendukung kelancaran operasional kantor.",
+      "Menangani troubleshooting hardware & network seperti perbaikan printer, konfigurasi LAN/internet, serta maintenance PC guna meminimalkan downtime pengguna.",
+      "Mengelola dan menyelesaikan ticket permintaan (request) melalui sistem CoreSys secara tepat waktu, termasuk perubahan data pengiriman, pembaruan informasi operasional, dan reset akses pengguna.",
+      "Memberikan dukungan teknis responsif kepada karyawan, memastikan stabilitas sistem dan efisiensi kerja harian.",
+    ],
+  },
+  {
     company: "Kuliah Kerja Lapangan Desa Brani, Cilacap",
     position: "Koordinator IT",
     period: "Aug 2025 - Sep 2025",
