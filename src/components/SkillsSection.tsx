@@ -26,6 +26,7 @@ const skillCategories = [
       { name: "Canva", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" },
       { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
       { name: "Premiere Pro", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg" },
+      { name: "CapCut", icon: "https://img.icons8.com/fluency/96/capcut.png" },
       { name: "Word", icon: "https://img.icons8.com/color/96/microsoft-word-2019--v2.png" },
       { name: "Excel", icon: "https://img.icons8.com/color/96/microsoft-excel-2019--v1.png" },
     ],
