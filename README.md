@@ -31,4 +31,4 @@ npm run dev
 
 ## Deployment
 
-Open [Lovable](https://lovable.dev) → Share → Publish.
+Open [Vercel](https://vercel.com/) → Import Project From Github → Publish → Custom domain.
