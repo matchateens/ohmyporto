@@ -2,8 +2,7 @@
 
 Personal portfolio website for showcasing projects, skills, certificates, education, and work experience.
 
-🔗 **Live**: [ohmyporto.lovable.app](https://ohmyporto.lovable.app/)
-
+🔗 **Live**: [atins.my.id](https://www.atins.my.id/)
 ## Tech Stack
 
 - React + TypeScript
