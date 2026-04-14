@@ -36,8 +36,8 @@ const HeroSection = () => {
           
           {/* Description */}
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: '0.8s' }}>
-            Fresh Graduate S1 Teknologi Informasi dengan minat pada Data Science dan Backend Development. 
-            Terbiasa bekerja dengan RESTful API, pengolahan data, serta dasar machine learning.
+            Fresh Graduate Teknologi Informasi dengan minat yang kuat di bidang Data Science, IT Support, dan Web Development. 
+            Berpengalaman dalam analisis data, eksplorasi tren, serta pengembangan aplikasi web menggunakan Django.
           </p>
           
           {/* CTA Buttons */}
