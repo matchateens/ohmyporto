@@ -6,10 +6,9 @@ const experienceData = [
     position: "Information Technology – Magang",
     period: "Nov 2025 - Saat ini",
     responsibilities: [
-      "Melakukan instalasi ulang sistem operasi, konfigurasi perangkat, dan deployment software untuk mendukung kelancaran operasional kantor.",
-      "Menangani troubleshooting hardware & network seperti perbaikan printer, konfigurasi LAN/internet, serta maintenance PC guna meminimalkan downtime pengguna.",
-      "Mengelola dan menyelesaikan ticket permintaan (request) melalui sistem CoreSys secara tepat waktu, termasuk perubahan data pengiriman, pembaruan informasi operasional, dan reset akses pengguna.",
-      "Memberikan dukungan teknis responsif kepada karyawan, memastikan stabilitas sistem dan efisiensi kerja harian.",
+      "Menangani troubleshooting hardware dan jaringan (printer, LAN/internet, dan PC) guna meminimalkan downtime serta meningkatkan efisiensi kerja pengguna.",
+      "Mengelola dan menyelesaikan 200+ ticket per minggu (±1100+ per bulan) melalui sistem CoreSys secara tepat waktu.",
+      "Melakukan maintenance rutin pada perangkat IT (PC, jaringan, dan periferal) untuk memastikan performa sistem tetap optimal.",
     ],
   },
   {
