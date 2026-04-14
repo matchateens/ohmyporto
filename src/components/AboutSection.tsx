@@ -4,7 +4,7 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 const infoItems = [
   { icon: User, label: "Name", value: "Fathin Cahyo Ramadhan" },
   { icon: MapPin, label: "Location", value: "Duren Tiga, Pancoran, Indonesia" },
-  { icon: Briefcase, label: "Interest", value: "Data Science, Backend Development, Cloud Computing" },
+  { icon: Briefcase, label: "Interest", value: "Data Science, IT Support, Web Development" },
   { icon: GraduationCap, label: "Education", value: "S1 Teknologi Informasi" },
 ];
 
