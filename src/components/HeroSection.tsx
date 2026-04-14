@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail, Instagram } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Instagram, Download } from "lucide-react";
 
 const HeroSection = () => {
   return (
