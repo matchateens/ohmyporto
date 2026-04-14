@@ -30,7 +30,7 @@ const HeroSection = () => {
           {/* Title with typing effect */}
           <div className="h-12 mb-8 overflow-hidden">
           <p className="text-xl md:text-2xl text-muted-foreground font-mono animate-typing inline-block">
-              Data Engineer | Backend Developer
+              Data Science | IT Support | Web Development
             </p>
           </div>
           
