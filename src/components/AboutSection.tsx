@@ -4,7 +4,7 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 const infoItems = [
   { icon: User, label: "Name", value: "Fathin Cahyo Ramadhan" },
   { icon: MapPin, label: "Location", value: "Duren Tiga, Pancoran, Indonesia" },
-  { icon: Briefcase, label: "Interest", value: "Data Science, Backend Development, Cloud Computing" },
+  { icon: Briefcase, label: "Interest", value: "Data Science, IT Support, Web Development" },
   { icon: GraduationCap, label: "Education", value: "S1 Teknologi Informasi" },
 ];
 
@@ -47,18 +47,17 @@ const AboutSection = () => {
                 Fresh Graduate S1 Teknologi Informasi
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Fresh Graduate S1 Teknologi Informasi dari Universitas AMIKOM Purwokerto dengan 
-                minat pada Data Science dan Backend Development. Memiliki pengalaman dalam 
-                pengembangan API menggunakan Node.js untuk aplikasi deteksi kesuburan telur, 
-                serta pemrosesan dan analisis data menggunakan Python. Terbiasa bekerja dengan 
-                konsep RESTful API, pengolahan data, serta dasar machine learning.
+                Fresh Graduate Teknologi Informasi dengan minat yang kuat di bidang Data Science, 
+                IT Support, dan Web Development. Memiliki ketertarikan dalam mengolah data menjadi 
+                insight yang bernilai serta mengembangkan solusi digital yang efektif dan responsif. 
+                Berpengalaman dalam analisis data, eksplorasi tren, serta pengembangan aplikasi web 
+                menggunakan Django, dengan pendekatan problem-solving yang terstruktur dan berbasis data.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Memiliki kemampuan berpikir analitis, problem solving, dan manajemen waktu yang 
-                baik, serta mampu beradaptasi dengan cepat di lingkungan kerja yang dinamis. 
-                Saat ini tengah memperdalam kompetensi di bidang Data Science, termasuk eksplorasi 
-                data, machine learning, dan pengembangan solusi berbasis data untuk mendukung 
-                pengambilan keputusan yang efektif.
+                Saat ini memiliki pengalaman dalam bidang IT sebagai IT Helpdesk dan IT Support, 
+                termasuk menangani ticketing system, troubleshooting hardware dan software, serta 
+                mendukung operasional teknologi sehari-hari. Memiliki semangat belajar yang tinggi, 
+                adaptif terhadap teknologi baru, serta mampu bekerja secara mandiri maupun dalam tim.
               </p>
             </div>
 
