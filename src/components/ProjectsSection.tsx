@@ -23,6 +23,9 @@ import skintificKlasifikasi from "@/assets/projects/skintific-klasifikasi.jpg";
 // Project images - Game Recommender
 import gameRecommender from "@/assets/projects/game-recommender.png";
 
+// Project images - NutriVision
+import nutrivision from "@/assets/projects/nutrivision.png";
+
 interface Project {
   title: string;
   description: string;
@@ -34,6 +37,15 @@ interface Project {
 }
 
 const projects: Project[] = [
+  // 2026
+  {
+    title: "NutriVision ID",
+    description: "Platform dashboard interaktif untuk visualisasi data stunting di Indonesia dan simulasi program Makan Bergizi Gratis (MBG). Dilengkapi peta interaktif 38 provinsi (geospatial heatmap), simulator anggaran operasional, dan AI Strategic Insight bertenaga Gemini API untuk rekomendasi kebijakan taktis.",
+    images: [nutrivision],
+    tags: ["React", "Tailwind CSS", "Gemini API", "D3.js", "Dashboard", "2026"],
+    github: "https://github.com/matchateens/nutrivision_",
+    demo: "https://nutrivision-836488272477.asia-southeast2.run.app/",
+  },
   // 2024
   {
     title: "Web Klasifikasi Ulasan Skintific",
