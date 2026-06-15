@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, Figma, X } from "lucide-react";
+import { ExternalLink, Github, Figma } from "lucide-react";
 
 // Project images - Sky Jobs
 import skyjobsLoading from "@/assets/projects/skyjobs-loading.png";
@@ -26,6 +26,9 @@ import gameRecommender from "@/assets/projects/game-recommender.png";
 // Project images - NutriVision
 import nutrivision from "@/assets/projects/nutrivision.png";
 
+// Project images - Atinstore Premium Hub
+import atinstorePreview from "@/assets/projects/atinstore.png";
+
 interface Project {
   title: string;
   description: string;
@@ -45,6 +48,13 @@ const projects: Project[] = [
     tags: ["React", "Tailwind CSS", "Gemini API", "D3.js", "Dashboard", "2026"],
     github: "https://github.com/matchateens/nutrivision_",
     demo: "https://nutrivision-836488272477.asia-southeast2.run.app/",
+  },
+  {
+    title: "Atinstore Premium Hub",
+    description: "Platform e-commerce modern yang menyediakan layanan berlangganan akun premium untuk streaming, kecerdasan buatan (AI), produktivitas, VPN, dan edukasi. Dilengkapi fitur keranjang belanja interaktif, kalkulator harga otomatis (Buy Dialog), welcome popup, pencarian produk per kategori, serta integrasi sistem pembayaran QRIS.",
+    images: [atinstorePreview],
+    tags: ["React", "Tailwind CSS", "TypeScript", "Context API", "E-commerce", "Shadcn UI", "2025"],
+    github: "https://github.com/matchateens/atinstore-premium-hub",
   },
   // 2024
   {
@@ -146,7 +156,7 @@ const ProjectsSection = () => {
                       {project.title}
                     </h3>
                     <div className="flex gap-1">
-                      {"github" in project && project.github && (
+                      {project.github && (
                         <Button
                           variant="ghost"
                           size="icon"
@@ -158,7 +168,7 @@ const ProjectsSection = () => {
                           </a>
                         </Button>
                       )}
-                      {"figma" in project && project.figma && (
+                      {project.figma && (
                         <Button
                           variant="ghost"
                           size="icon"
@@ -170,7 +180,7 @@ const ProjectsSection = () => {
                           </a>
                         </Button>
                       )}
-                      {"demo" in project && project.demo && (
+                      {project.demo && (
                         <Button
                           variant="ghost"
                           size="icon"
