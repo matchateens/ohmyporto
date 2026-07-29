@@ -47,7 +47,7 @@ const HeroSection = () => {
                 View My Work
               </Button>
             </a>
-            <a href="https://drive.google.com/file/d/12u9zaImKWhgN80IGiDN4wcR9HMmZfI-E/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1FQNdmXwrSt8hadQq4oNgc7LKUmOvYRpE/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" size="lg" className="gap-2">
                 <Download size={18} />
                 Download CV
