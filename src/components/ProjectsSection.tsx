@@ -23,6 +23,9 @@ import skintificKlasifikasi from "@/assets/projects/skintific-klasifikasi.jpg";
 // Project images - Game Recommender
 import gameRecommender from "@/assets/projects/game-recommender.png";
 
+// Project images - Job.In
+import jobinPreview from "@/assets/projects/jobin.png";
+
 // Project images - NutriVision
 import nutrivision from "@/assets/projects/nutrivision.png";
 
@@ -50,6 +53,14 @@ const projects: Project[] = [
     demo: "https://nutrivision-836488272477.asia-southeast2.run.app/",
   },
   {
+    title: "Job.In - Application Tracker",
+    description: "Aplikasi web & mobile pelacak lamaran pekerjaan dan progress karir. Dilengkapi papan Kanban interaktif drag-and-drop, analisis dashboard pie chart, ringkasan metrik karir real-time (Response & Success Rate), autentikasi Firebase, dan sinkronisasi Cloud Firestore.",
+    images: [jobinPreview],
+    tags: ["React", "Firebase", "Capacitor", "Tailwind CSS", "Recharts", "2026"],
+    github: "https://github.com/matchateens/Job.In",
+    demo: "https://jobin.fatincahya69.workers.dev",
+  },
+  {
     title: "Atinstore Premium Hub",
     description: "Platform e-commerce modern yang menyediakan layanan berlangganan akun premium untuk streaming, kecerdasan buatan (AI), produktivitas, VPN, dan edukasi. Dilengkapi fitur keranjang belanja interaktif, kalkulator harga otomatis (Buy Dialog), welcome popup, pencarian produk per kategori, serta integrasi sistem pembayaran QRIS.",
     images: [atinstorePreview],
@@ -70,6 +81,7 @@ const projects: Project[] = [
     images: [gameRecommender],
     tags: ["Machine Learning", "Python", "Recommender System", "2024"],
     github: "https://github.com/matchateens/game-recommender-system",
+    demo: "http://34.101.51.219",
   },
   {
     title: "Fertile Egg Detector",
